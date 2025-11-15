@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import TextRevealCard from "./components/TextRevealCard";
 import {
@@ -6,10 +8,10 @@ import {
   CardItem,
 } from "./components/ThreeDCard";
 
-
 export default function Page() {
   return (
     <div className="min-h-screen bg-black text-white">
+
       {/* ================= HEADER ================= */}
       <section className="py-12">
         <div className="max-w-3xl mx-auto text-center mb-8">
@@ -50,24 +52,18 @@ export default function Page() {
                 <CardItem translateZ={40}>
                   <Image
                     src="/projects/alibaba.png"
-                    alt="Alibaba"
+                    alt="Alibaba Internship"
                     width={350}
                     height={350}
                     className="w-full h-full object-cover rounded-xl"
                   />
                 </CardItem>
 
-                <CardItem
-                  translateZ={80}
-                  className="absolute bottom-3 left-3 text-lg font-semibold"
-                >
-                  Sales Internship
+                <CardItem translateZ={80} className="absolute bottom-3 left-3 text-lg font-semibold">
+                  Sales Internship — Alibaba
                 </CardItem>
 
-                <CardItem
-                  translateZ={100}
-                  className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right"
-                >
+                <CardItem translateZ={100} className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right">
                   Sales executive intern supporting Alibaba.com onboarding
                 </CardItem>
               </CardBody>
@@ -75,15 +71,12 @@ export default function Page() {
           </a>
 
           {/* ---------- Card 2: Glamour Glow ---------- */}
-          <a
-            href="https://www.instagram.com/glamour_glow2023/"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/glamour_glow2023/" target="_blank">
             <CardContainer>
               <CardBody>
                 <CardItem translateZ={40}>
                   <Image
-                    src="/projects/glamourglow.jpeg"
+                    src="/projects/glamourglow.png"
                     alt="Glamour Glow"
                     width={350}
                     height={350}
@@ -91,34 +84,24 @@ export default function Page() {
                   />
                 </CardItem>
 
-                <CardItem
-                  translateZ={80}
-                  className="absolute bottom-3 left-3 text-lg font-semibold"
-                >
+                <CardItem translateZ={80} className="absolute bottom-3 left-3 text-lg font-semibold">
                   Instagram Growth — Glamour Glow
                 </CardItem>
 
-                <CardItem
-                  translateZ={100}
-                  className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right"
-                >
-                  Beauty & fashion page growth through reels
-                  and trend optimization
+                <CardItem translateZ={100} className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right">
+                  Beauty & fashion page growth through reels & trend optimization
                 </CardItem>
               </CardBody>
             </CardContainer>
           </a>
 
           {/* ---------- Card 3: Aesthx Makeups ---------- */}
-          <a
-            href="https://www.instagram.com/aesthxmakeups/"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/aesthxmakeups/" target="_blank">
             <CardContainer>
               <CardBody>
                 <CardItem translateZ={40}>
                   <Image
-                    src="/projects/makeup.jpeg"
+                    src="/projects/Makeup.png"
                     alt="Aesthx Makeups"
                     width={350}
                     height={350}
@@ -126,56 +109,42 @@ export default function Page() {
                   />
                 </CardItem>
 
-                <CardItem
-                  translateZ={80}
-                  className="absolute bottom-3 left-3 text-lg font-semibold"
-                >
+                <CardItem translateZ={80} className="absolute bottom-3 left-3 text-lg font-semibold">
                   Instagram Growth — Aesthx Makeups
                 </CardItem>
 
-                <CardItem
-                  translateZ={100}
-                  className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right"
-                >
-                  Aesthetic makeup content and reels growth
+                <CardItem translateZ={100} className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right">
+                  Aesthetic makeup content & reels growth
                 </CardItem>
               </CardBody>
             </CardContainer>
           </a>
 
           {/* ---------- Card 4: Girls Being Girls ---------- */}
-          <a
-            href="https://www.instagram.com/girlsbeinggirls02/"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/girlsbeinggirls02/" target="_blank">
             <CardContainer>
               <CardBody>
                 <CardItem translateZ={40}>
                   <Image
-                    src="/projects/instagram.jpeg"
-                    alt="Girls Being Girls"
+                    src="/projects/instagram.png"
+                    alt="GirlsBeingGirls"
                     width={350}
                     height={350}
                     className="w-full h-full object-cover rounded-xl"
                   />
                 </CardItem>
 
-                <CardItem
-                  translateZ={80}
-                  className="absolute bottom-3 left-3 text-lg font-semibold"
-                >
+                <CardItem translateZ={80} className="absolute bottom-3 left-3 text-lg font-semibold">
                   Instagram Growth — Girls Being Girls
                 </CardItem>
 
-                <CardItem
-                  translateZ={100}
-                  className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right"
-                >
+                <CardItem translateZ={100} className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right">
                   High-engagement meme/community page
                 </CardItem>
               </CardBody>
             </CardContainer>
           </a>
+
         </div>
       </section>
     </div>
