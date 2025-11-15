@@ -2,11 +2,7 @@
 
 import Image from "next/image";
 import TextRevealCard from "./components/TextRevealCard";
-import {
-  CardContainer,
-  CardBody,
-  CardItem,
-} from "./components/ThreeDCard";
+import { PinContainer } from "./components/PinCard";
 
 export default function Page() {
   return (
@@ -39,111 +35,79 @@ export default function Page() {
 
       {/* ================= PROJECTS ================= */}
       <section className="py-20">
-        <h2 className="text-4xl font-bold text-center mb-10">
+        <h2 className="text-4xl font-bold text-center mb-14">
           Projects & Case Studies
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-center px-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 justify-center px-6">
 
-          {/* ---------- Card 1: Alibaba ---------- */}
-          <a href="https://competenceconsulting.in/" target="_blank">
-            <CardContainer>
-              <CardBody>
-                <CardItem translateZ={40}>
-                  <Image
-                    src="/projects/alibaba.png"
-                    alt="Alibaba Internship"
-                    width={350}
-                    height={350}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </CardItem>
+          {/* ---------- PROJECT 1: Alibaba ---------- */}
+          <PinContainer
+            title="Sales Internship — Alibaba"
+            href="https://competenceconsulting.in/"
+          >
+            <Image
+              src="/projects/alibaba.png"
+              alt="Alibaba Internship"
+              width={360}
+              height={360}
+              className="rounded-xl object-cover"
+            />
+            <p className="mt-3 text-sm text-gray-300">
+              Sales executive intern supporting Alibaba.com onboarding.
+            </p>
+          </PinContainer>
 
-                <CardItem translateZ={80} className="absolute bottom-3 left-3 text-lg font-semibold">
-                  Sales Internship — Alibaba
-                </CardItem>
+          {/* ---------- PROJECT 2: Glamour Glow ---------- */}
+          <PinContainer
+            title="Instagram Growth — Glamour Glow"
+            href="https://www.instagram.com/glamour_glow2023/"
+          >
+            <Image
+              src="/projects/glamourglow.png"
+              alt="Glamour Glow"
+              width={360}
+              height={360}
+              className="rounded-xl object-cover"
+            />
+            <p className="mt-3 text-sm text-gray-300">
+              Beauty & fashion page growth through reels & trend optimization.
+            </p>
+          </PinContainer>
 
-                <CardItem translateZ={100} className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right">
-                  Sales executive intern supporting Alibaba.com onboarding
-                </CardItem>
-              </CardBody>
-            </CardContainer>
-          </a>
+          {/* ---------- PROJECT 3: Aesthx Makeups ---------- */}
+          <PinContainer
+            title="Instagram Growth — Aesthx Makeups"
+            href="https://www.instagram.com/aesthxmakeups/"
+          >
+            <Image
+              src="/projects/Makeup.png"
+              alt="Aesthx Makeups"
+              width={360}
+              height={360}
+              className="rounded-xl object-cover"
+            />
+            <p className="mt-3 text-sm text-gray-300">
+              Aesthetic makeup content & reels growth.
+            </p>
+          </PinContainer>
 
-          {/* ---------- Card 2: Glamour Glow ---------- */}
-          <a href="https://www.instagram.com/glamour_glow2023/" target="_blank">
-            <CardContainer>
-              <CardBody>
-                <CardItem translateZ={40}>
-                  <Image
-                    src="/projects/glamourglow.png"
-                    alt="Glamour Glow"
-                    width={350}
-                    height={350}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </CardItem>
-
-                <CardItem translateZ={80} className="absolute bottom-3 left-3 text-lg font-semibold">
-                  Instagram Growth — Glamour Glow
-                </CardItem>
-
-                <CardItem translateZ={100} className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right">
-                  Beauty & fashion page growth through reels & trend optimization
-                </CardItem>
-              </CardBody>
-            </CardContainer>
-          </a>
-
-          {/* ---------- Card 3: Aesthx Makeups ---------- */}
-          <a href="https://www.instagram.com/aesthxmakeups/" target="_blank">
-            <CardContainer>
-              <CardBody>
-                <CardItem translateZ={40}>
-                  <Image
-                    src="/projects/Makeup.png"
-                    alt="Aesthx Makeups"
-                    width={350}
-                    height={350}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </CardItem>
-
-                <CardItem translateZ={80} className="absolute bottom-3 left-3 text-lg font-semibold">
-                  Instagram Growth — Aesthx Makeups
-                </CardItem>
-
-                <CardItem translateZ={100} className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right">
-                  Aesthetic makeup content & reels growth
-                </CardItem>
-              </CardBody>
-            </CardContainer>
-          </a>
-
-          {/* ---------- Card 4: Girls Being Girls ---------- */}
-          <a href="https://www.instagram.com/girlsbeinggirls02/" target="_blank">
-            <CardContainer>
-              <CardBody>
-                <CardItem translateZ={40}>
-                  <Image
-                    src="/projects/instagram.png"
-                    alt="GirlsBeingGirls"
-                    width={350}
-                    height={350}
-                    className="w-full h-full object-cover rounded-xl"
-                  />
-                </CardItem>
-
-                <CardItem translateZ={80} className="absolute bottom-3 left-3 text-lg font-semibold">
-                  Instagram Growth — Girls Being Girls
-                </CardItem>
-
-                <CardItem translateZ={100} className="absolute bottom-3 right-3 text-sm text-gray-300 w-40 text-right">
-                  High-engagement meme/community page
-                </CardItem>
-              </CardBody>
-            </CardContainer>
-          </a>
+          {/* ---------- PROJECT 4: Girls Being Girls ---------- */}
+          <PinContainer
+            title="Instagram Growth — Girls Being Girls"
+            href="https://www.instagram.com/girlsbeinggirls02/"
+          >
+            <Image
+              src="/projects/instagram.png"
+              alt="Girls Being Girls"
+              width={360}
+              height={360}
+              className="rounded-xl object-cover"
+            />
+            <p className="mt-3 text-sm text-gray-300">
+              High-engagement meme/community page.
+            </p>
+          </PinContainer>
 
         </div>
       </section>
