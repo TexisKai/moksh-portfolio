@@ -11,7 +11,7 @@ export default function Page() {
       {/* ================= HEADER ================= */}
       <section className="py-12">
         <div className="max-w-3xl mx-auto text-center mb-8">
-          <h1 className="text-4xl font-semibold">Moksh Prajapati</h1>
+          <h1 className="text-4xl font-semibold">Moksh Parjapati</h1>
           <p className="text-gray-300 mt-2">
             Digital Marketer • Performance Marketing • Instagram Growth
           </p>
