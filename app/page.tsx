@@ -11,7 +11,7 @@ export default function Page() {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <TextRevealCard text="You know The Buisness" revealText="I know The Chemistry">
+          <TextRevealCard text="You know The Buisness," revealText="I know The Chemistry.">
             <h2 className="text-white text-lg mb-2">Hey, I'm Moksh — Digital Marketer & Growth Specialist</h2>
             <p className="text-gray-400 text-sm">Currently interning as Sales Executive at CompetenceConsulting.in (Alibaba.com channel partner)</p>
           </TextRevealCard>
